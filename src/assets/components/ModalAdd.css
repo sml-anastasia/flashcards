@@ -1,0 +1,37 @@
+.modal-add {
+  width: 500px;
+  padding: 2rem;
+  display: grid;
+  grid-template-areas:
+    "word transcr"
+    "def expl"
+    "cat btn";
+  grid-gap: 2rem;
+  border: 1px solid green;
+}
+
+.add-word {
+  grid-area: word;
+}
+
+.add-transcr {
+  grid-area: transcr;
+}
+
+.add-def {
+  grid-area: def;
+}
+
+.add-example {
+  grid-area: expl;
+}
+
+.add-category {
+  width: 10rem;
+  grid-area: cat;
+}
+
+.add-btn {
+  width: 3rem;
+  grid-area: btn;
+}

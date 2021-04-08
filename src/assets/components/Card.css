@@ -1,0 +1,34 @@
+.card {
+  width: 20em;
+  height: auto;
+  margin: 2rem;
+  padding: 1rem;
+  border: 1px solid black;
+}
+
+.card-word,
+.card-transcr,
+.card-def {
+  margin-bottom: 0.5rem;
+}
+
+.card-word {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.card-transcr {
+  color: gray;
+  font-style: italic;
+}
+
+.card-category {
+  width: max-content;
+  margin: auto;
+  padding: 0 5px;
+  background-color: burlywood;
+}
+
+.card-example {
+  font-weight: 300;
+}
