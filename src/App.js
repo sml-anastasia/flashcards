@@ -1,8 +1,8 @@
 
 import './App.css';
-import Card from './assets/components/Card';
-import Bar from './assets/components/Bar';
-import ModalAdd from './assets/components/ModalAdd';
+import Card from './components/Card';
+import Bar from './components/Bar';
+import ModalAdd from './components/ModalAdd';
 
 function App() {
   return (

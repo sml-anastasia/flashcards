@@ -1,4 +1,4 @@
-import './ModalAdd.css';
+import '../assets/styles/ModalAdd.css';
 
 function ModalAdd(props) {
     return(

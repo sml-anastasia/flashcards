@@ -1,4 +1,4 @@
-import './Bar.css';
+import '../assets/styles/Bar.css';
 
 function Bar(props) {
     return(
