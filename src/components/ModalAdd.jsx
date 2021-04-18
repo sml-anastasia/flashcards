@@ -1,5 +1,3 @@
-import '../assets/styles/ModalAdd.css';
-
 function ModalAdd(props) {
     return(
         <div className="modal-add">

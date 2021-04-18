@@ -1,0 +1,21 @@
+.words-list {
+  width: 100%;
+  border: 1px solid black;
+  text-align: start;
+}
+
+.btn_add,
+.btn_edit,
+.btn_del {
+  @include btn;
+  &:hover {
+    background-color: $hoverColor;
+  }
+  &:active {
+    background-color: $activeColor;
+  }
+}
+
+.btn_add {
+  background-color: $btnAddColor;
+}

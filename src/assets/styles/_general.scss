@@ -1,0 +1,41 @@
+button,
+a {
+  cursor: pointer;
+}
+
+input {
+  @include word-input;
+  &:hover {
+    border: 2px solid $accentColor;
+  }
+}
+
+.head-title {
+  font-size: $headTitleFontSize;
+  color: $accentColor;
+}
+
+.new-word_btn {
+  @include btn;
+  background-color: $accentColor;
+  color: #fff;
+  font-weight: 600;
+
+  &:hover {
+    background-color: $hoverColor;
+  }
+
+  &:active {
+    background-color: $activeColor;
+  }
+}
+
+.words-list {
+  color: $defaultTextColor;
+}
+
+.words-list_item {
+  font-size: $plainTitleFontSize;
+  font-weight: 600;
+  color: $accentColor;
+}

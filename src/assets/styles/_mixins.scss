@@ -1,0 +1,12 @@
+@mixin btn {
+  height: 30px;
+  margin: 1em 0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+@mixin word-input {
+  border: none;
+  border-bottom: 2px solid $defaultTextColor;
+}
