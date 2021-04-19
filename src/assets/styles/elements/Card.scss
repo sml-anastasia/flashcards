@@ -3,7 +3,10 @@
   height: auto;
   margin: 2rem;
   padding: 1rem;
-  border: 1px solid black;
+  background-color: $lightColor;
+  border-radius: 20px;
+  color: $darkColor;
+  // border: 1px solid $darkColor;
 }
 
 .card-word,
@@ -18,7 +21,6 @@
 }
 
 .card-transcr {
-  color: gray;
   font-style: italic;
 }
 
@@ -26,7 +28,8 @@
   width: max-content;
   margin: auto;
   padding: 0 5px;
-  background-color: burlywood;
+  background-color: $accentColor2;
+  color: $lightColor;
 }
 
 .card-example {

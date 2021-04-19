@@ -6,36 +6,37 @@ a {
 input {
   @include word-input;
   &:hover {
-    border: 2px solid $accentColor;
+    border: 2px solid $accentColor1;
   }
 }
 
 .head-title {
   font-size: $headTitleFontSize;
-  color: $accentColor;
+  color: $accentColor2;
 }
 
 .new-word_btn {
   @include btn;
-  background-color: $accentColor;
-  color: #fff;
+  background-color: $accentColor2;
+  color: $lightColor;
   font-weight: 600;
 
   &:hover {
-    background-color: $hoverColor;
+    background-color: $lightColor;
+    color: $darkColor;
   }
 
   &:active {
-    background-color: $activeColor;
+    background-color: $accentColor3;
   }
 }
 
 .words-list {
-  color: $defaultTextColor;
+  color: $darkColor;
 }
 
 .words-list_item {
   font-size: $plainTitleFontSize;
   font-weight: 600;
-  color: $accentColor;
+  color: $accentColor2;
 }

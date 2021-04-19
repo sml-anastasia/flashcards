@@ -1,6 +1,6 @@
 .words-list {
   width: 100%;
-  border: 1px solid black;
+  border: 1px solid $darkColor;
   text-align: start;
 }
 
@@ -8,14 +8,26 @@
 .btn_edit,
 .btn_del {
   @include btn;
+  img {
+    width: 16px;
+    height: 16px;
+  }
   &:hover {
-    background-color: $hoverColor;
+    background-color: $lightColor;
   }
   &:active {
-    background-color: $activeColor;
+    background-color: $accentColor3;
   }
 }
 
 .btn_add {
-  background-color: $btnAddColor;
+  background-color: $accentColor2;
+}
+
+.btn_edit {
+  background-color: $accentColor3;
+}
+
+.btn_del {
+  background-color: $accentColor1;
 }

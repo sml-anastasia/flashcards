@@ -9,9 +9,15 @@ function AddWordForm(props) {
             <td><input className="word-russian" value={props.russian} placeholder="enter translate"/></td>
             <td><input className="word-tags" value={props.tags} placeholder="enter tags"/></td>
             <td>
-                <button className="btn_add">добавить</button>
-                <button className="btn_edit">ред</button>
-                <button className="btn_del">удалить</button>
+                <button className="btn_add">
+                <img src="./images/icon-add.svg" alt=""/>
+                </button>
+                <button className="btn_edit">
+                    <img src="./images/icon-pen.svg" alt=""/>
+                </button>
+                <button className="btn_del">
+                    <img src="./images/icon-delete.svg" alt=""/>
+                </button>
             </td>
         </Fragment>
     );
@@ -26,8 +32,12 @@ function WordItem(props) {
             <td>{props.russian}</td>
             <td>{props.tags}</td>
             <td>
-                <button className="btn_edit">ред</button>
-                <button className="btn_del">удалить</button>
+                <button className="btn_edit">
+                    <img src="./images/icon-pen.svg" alt=""/>
+                </button>
+                <button className="btn_del">
+                    <img src="./images/icon-delete.svg" alt=""/>
+                </button>
             </td>
         </Fragment>
     );
