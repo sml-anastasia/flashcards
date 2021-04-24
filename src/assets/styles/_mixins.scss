@@ -1,12 +1,15 @@
 @mixin btn {
   height: 30px;
-  margin: 0.5em 0;
+  margin: 0.5em 0.2em;
   border: none;
   border-radius: 8px;
   cursor: pointer;
 }
 
 @mixin word-input {
-  border: none;
-  border-bottom: 2px solid $darkColor;
+  height: 20px;
+  border-radius: 20px;
+  border: 0.5px solid $accentColor2;
+  background-color: $supportColorLight;
+  color: $supportColorDark;
 }

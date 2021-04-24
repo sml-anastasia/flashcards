@@ -6,7 +6,7 @@ a {
 input {
   @include word-input;
   &:hover {
-    border: 2px solid $accentColor1;
+    border: 0.5px solid $accentColor1;
   }
 }
 
@@ -18,12 +18,12 @@ input {
 .new-word_btn {
   @include btn;
   background-color: $accentColor2;
-  color: $lightColor;
+  color: $supportColorLight;
   font-weight: 600;
 
   &:hover {
-    background-color: $lightColor;
-    color: $darkColor;
+    background-color: $supportColorLight;
+    color: $supportColorDark;
   }
 
   &:active {
@@ -32,7 +32,7 @@ input {
 }
 
 .words-list {
-  color: $darkColor;
+  color: $supportColorDark;
 }
 
 .words-list_item {

@@ -2,7 +2,6 @@ import './App.css';
 import Card from './components/Card';
 import Bar from './components/Bar';
 import List from './components/List';
-// import ModalAdd from './components/ModalAdd';
 import './assets/styles/style.scss';
 
 let wordsJSON = `[

@@ -1,18 +1,27 @@
 .card {
-  width: 20em;
-  height: auto;
+  width: 15em;
+  height: 20em;
   margin: 2rem;
   padding: 1rem;
-  background-color: $lightColor;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: $supportColorLight;
   border-radius: 20px;
-  color: $darkColor;
-  // border: 1px solid $darkColor;
+  color: $supportColorDark;
 }
 
 .card-word,
 .card-transcr,
 .card-def {
   margin-bottom: 0.5rem;
+}
+
+.card-word,
+.card-transcr,
+.card-def,
+.card-category {
+  margin-bottom: 1em;
 }
 
 .card-word {
@@ -29,7 +38,7 @@
   margin: auto;
   padding: 0 5px;
   background-color: $accentColor2;
-  color: $lightColor;
+  color: $supportColorLight;
 }
 
 .card-example {

@@ -1,6 +1,6 @@
 .words-list {
   width: 100%;
-  border: 1px solid $darkColor;
+  border: 1px solid $supportColorDark;
   text-align: start;
 }
 
@@ -13,7 +13,7 @@
     height: 16px;
   }
   &:hover {
-    background-color: $lightColor;
+    background-color: $supportColorLight;
   }
   &:active {
     background-color: $accentColor3;
