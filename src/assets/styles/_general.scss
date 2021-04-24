@@ -6,13 +6,13 @@ a {
 input {
   @include word-input;
   &:hover {
-    border: 0.5px solid $accentColor1;
+    border: 1.5px solid $accentColor3;
   }
 }
 
 .head-title {
   font-size: $headTitleFontSize;
-  color: $accentColor2;
+  color: $accentColor1;
 }
 
 .new-word_btn {
@@ -22,8 +22,7 @@ input {
   font-weight: 600;
 
   &:hover {
-    background-color: $supportColorLight;
-    color: $supportColorDark;
+    background-color: $accentColor4;
   }
 
   &:active {
@@ -38,5 +37,5 @@ input {
 .words-list_item {
   font-size: $plainTitleFontSize;
   font-weight: 600;
-  color: $accentColor2;
+  color: $accentColor1;
 }

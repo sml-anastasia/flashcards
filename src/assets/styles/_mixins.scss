@@ -8,8 +8,8 @@
 
 @mixin word-input {
   height: 20px;
-  border-radius: 20px;
-  border: 0.5px solid $accentColor2;
-  background-color: $supportColorLight;
+  border-radius: 8px;
+  border: 1.5px solid $accentColor2;
+  background-color: $supportColorWhite;
   color: $supportColorDark;
 }

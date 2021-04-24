@@ -37,7 +37,7 @@
   width: max-content;
   margin: auto;
   padding: 0 5px;
-  background-color: $accentColor2;
+  background-color: $accentColor3;
   color: $supportColorWhite;
 }
 
@@ -51,11 +51,11 @@
   margin: 0 auto;
   font-size: 1.1rem;
   color: $supportColorWhite;
-  background-color: $accentColor1;
+  background-color: $accentColor2;
   &:hover {
-    background-color: $accentColor2;
+    background-color: $accentColor5;
   }
   &:active {
-    background-color: $accentColor2;
+    background-color: $accentColor4;
   }
 }
