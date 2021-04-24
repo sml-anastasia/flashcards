@@ -44,3 +44,18 @@
 .card-example {
   font-weight: 300;
 }
+
+.card-btn {
+  @include btn;
+  width: 100px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: $supportColorLight;
+  background-color: $accentColor1;
+  &:hover {
+    background-color: $accentColor2;
+  }
+  &:active {
+    background-color: $accentColor2;
+  }
+}

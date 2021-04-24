@@ -12,7 +12,7 @@ function WordInfo(props) {
 
 function ShowWord(props) {
     return(
-        <button className="check-btn">Проверить</button>
+        <button onClick={props.show} className="card-btn">проверить</button>
     );
 }
 export default class Card extends React.Component{
@@ -34,12 +34,12 @@ export default class Card extends React.Component{
         const {transcription, russian, tags, english} = this.props;
         return(
             <div className="card">
-                <div className="card-word">{english}</div>
-                {
-                    this.state.pressed ?
-                    <WordInfo transcription={transcription} russian={russian} tags={tags}></WordInfo> :
-                    <ShowWord onClick={this.handleChange}></ShowWord>
-                }
+            <div className="card-word">{english}</div>
+            {this.state.pressed ? (
+                <WordInfo transcription={transcription} russian={russian} tags={tags}></WordInfo>
+            ) : (
+                <ShowWord show={this.handleChange}></ShowWord>
+            )}
             </div>
         );
     }}
