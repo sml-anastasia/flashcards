@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 function WordInfo(props) {
     return (
@@ -10,43 +10,63 @@ function WordInfo(props) {
     );
 }
 
-function ShowWord(props) {
-    return(
-        <button onClick={props.show} className="card-btn">проверить</button>
-    );
-}
-export default class Card extends React.Component{
-    constructor(props) {
-        super(props);
-        this.state = {
-            pressed: false
-        };
+// ФУНКЦИОНАЛЬНЫЙ КОМПОНЕНТ
+const Card = (props) => {
+    const [pressed, setPressed] = useState(false);
+    const {transcription, russian, tags, english} = props;
+    const handleChange = () => {
+        setPressed(!pressed)
     }
 
-    handleChange = () => {
-        this.setState(
-            {
-                pressed: !this.state.pressed
-            }
-        );
-    }
-    render() {
-        const {transcription, russian, tags, english} = this.props;
-        return(
-            <div className="card">
-            <div className="card-word">{english}</div>
-            {this.state.pressed ? (
+    return (
+        <div className="card">
+        <div className="card-word">{english}</div>
+        {pressed ? (
                 <WordInfo transcription={transcription} russian={russian} tags={tags}></WordInfo>
             ) : (
-                <ShowWord show={this.handleChange}></ShowWord>
+                <button onClick={handleChange} className="card-btn">проверить</button>
             )}
-            </div>
-        );
-    }}
+        </div>
+    );
+}
+
+export default Card;
 
 
-    // Карточке слова добавьте состояние, которое будет отвечать за показывание/скрытие перевода. По умолчанию перевод всегда скрыт.  При нажатии на кнопку "Показать перевод", появляется перевод слова, а кнопка исчезает. Реализуйте этот функционал с помощью внутреннего состояния элемента и условного рендеринга.
+// КЛАССОВЫЙ КОМПОНЕНТ
+// function ShowWord(props) {
+//     return(
+//         <button onClick={props.show} className="card-btn">проверить</button>
+//     );
+// }
+// export default class Card extends React.Component{
+//     constructor(props) {
+//         super(props);
+//         this.state = {
+//             pressed: false
+//         };
+//     }
 
+//     handleChange = () => {
+//         this.setState(
+//             {
+//                 pressed: !this.state.pressed
+//             }
+//         );
+//     }
+//     render() {
+//         const {transcription, russian, tags, english} = this.props;
+//         return(
+//             <div className="card">
+//             <div className="card-word">{english}</div>
+//             {this.state.pressed ? (
+//                 <WordInfo transcription={transcription} russian={russian} tags={tags}></WordInfo>
+//             ) : (
+//                 <ShowWord show={this.handleChange}></ShowWord>
+//             )}
+//             </div>
+//         );
+//     }}
 
 // function Card(props) {
 //     return(
