@@ -1,6 +1,6 @@
 import './App.css';
 import Card from './components/Card';
-import Bar from './components/Bar';
+import Header from './components/Header';
 import List from './components/List';
 import './assets/styles/style.scss';
 
@@ -29,7 +29,7 @@ function App() {
   return (
     <div className="App">
       <h1 className="head-title">Flashcards</h1>
-      <Bar></Bar>
+      <Header></Header>
       <button className="new-word_btn">add new word</button>
       <div className="words-list">
         <div className="word-info word-info_title">
