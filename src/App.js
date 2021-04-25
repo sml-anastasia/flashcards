@@ -5,7 +5,6 @@ import List from './components/List';
 import './assets/styles/style.scss';
 
 let wordsJSON = `[
-{"id":"0","english":"","transcription":"","russian":"","tags":"", "isSelected": "true"},
 {"id":"1","english":"stork","transcription":"[ stɔːk ]","russian":"аист","tags":"животные"},
 {"id":"2","english":"shark","transcription":"[ ʃɑːk ]","russian":"акула","tags":"животные, еда"},
 {"id":"3","english":"antelope","transcription":"[ ˈæntɪləʊp ]","russian":"антилопа","tags":"животные"},
@@ -32,20 +31,19 @@ function App() {
       <h1 className="head-title">Flashcards</h1>
       <Bar></Bar>
       <button className="new-word_btn">add new word</button>
-      <table className="words-list">
-        <tr className="words-list_item">
-          <td>#</td>
-          <td>слово</td>
-          <td>транскрипция</td>
-          <td>перевод</td>
-          <td>теги</td>
-          <td></td>
-        </tr>
+      <div className="words-list">
+        <div className="word-info word-info_title">
+            <span>№</span>
+            <span>слово</span>
+            <span>транскрипция</span>
+            <span>перевод</span>
+            <span>теги</span>
+        </div>
         {
           words.map((word) => <List id={word.id} english={word.english} transcription={word.transcription} russian={word.russian} tags={word.tags} isSelected={word.isSelected}></List>)
         }
         
-      </table>
+      </div>
       <div className="container">
       {
         words.map((word) =>

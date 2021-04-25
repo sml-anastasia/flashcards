@@ -1,16 +1,25 @@
 .words-list {
   width: 100%;
-  border: 1px solid $supportColorDark;
+  padding: 0 3rem;
   text-align: start;
+  box-sizing: border-box;
+}
+
+.btn-box {
+  display: flex;
+  flex-direction: row;
 }
 
 .btn_add,
+.btn_close,
 .btn_edit,
 .btn_del {
+  width: 30px;
   @include btn;
   img {
     width: 16px;
     height: 16px;
+    margin: 0;
   }
   &:hover {
     background-color: $supportColorLight;
@@ -19,9 +28,15 @@
     background-color: $accentColor3;
   }
 }
-
 .btn_add {
+  background-color: $accentColor3;
+}
+
+.btn_close {
   background-color: $accentColor2;
+  img {
+    transform: rotate(45deg);
+  }
 }
 
 .btn_edit {
@@ -30,4 +45,29 @@
 
 .btn_del {
   background-color: $accentColor5;
+}
+
+.line {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid $supportColorDark;
+}
+
+.word-info_title {
+  font-size: $plainTitleFontSize;
+  font-weight: 700;
+  color: $accentColor1;
+}
+
+.word-info {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  span {
+    width: 100%;
+    &:first-child {
+      width: 10%;
+    }
+  }
 }
