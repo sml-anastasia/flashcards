@@ -1,10 +1,9 @@
 import './App.css';
-import Card from './components/Card';
+// import Card from './components/Card';
 import Header from './components/Header';
 // import List from './components/List';
 import CardSlider from './components/CardSlider';
 import './assets/styles/style.scss';
-// import {data} from './data';
 
 let wordsJSON = `[
   {"id":"1","english":"stork","transcription":"[ stɔːk ]","russian":"аист","tags":"животные"},
@@ -27,6 +26,7 @@ let wordsJSON = `[
   
 let words = JSON.parse(wordsJSON);
 
+
 function App() {
   return (
     <div className="App">
@@ -47,12 +47,12 @@ function App() {
         
       </div> */}
       <div className="container">
-        <CardSlider></CardSlider>
-      {
+        <CardSlider words={words}></CardSlider>
+      {/* {
         words.map((word) =>
           <Card english={word.english} transcription={word.transcription} russian={word.russian} tags={word.tags}></Card>
           )
-        }
+        } */}
       </div>
     </div>
   );
