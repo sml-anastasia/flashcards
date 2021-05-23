@@ -30,6 +30,10 @@ const CardSlider = (props) => {
         setPosition(currentItem - 1);
         console.log('pressed');
     }
+
+    if (currentItem >= words.length) {
+        return (<div>finish</div>)
+    } else {
     return (
         <CardBox
         showPrev={showPrev}
@@ -48,7 +52,7 @@ const CardSlider = (props) => {
         }
         >
         </CardBox>
-    )
+    )}
 }
 
 export default CardSlider;
