@@ -10,15 +10,19 @@ const CardBox = (props) => {
             src={leftArrow}
             alt="left-arrow"
             onClick={props.showPrev}></img>
-            {props.children}
+            <div>
+                {props.children}
+                <p className="card-counter">
+                    {props.number} / {props.total}
+                </p>
+            </div>
+            
             <img
             className="right-arrow"
             src={rightArrow}
             alt="right-arrow"
             onClick={props.showNext}></img>
-            <p className="card-counter">
-                {props.number} / {props.total}
-            </p>
+            
         </div>
     )
 }

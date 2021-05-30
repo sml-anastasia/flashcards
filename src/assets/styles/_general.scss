@@ -12,7 +12,13 @@ input {
 
 .head-title {
   font-size: $headTitleFontSize;
-  color: $accentColor1;
+  font-weight: bold;
+  color: $accentColor5;
+  text-transform: uppercase;
+  text-decoration: none;
+  &:hover {
+    color: $accentColor2;
+  }
 }
 
 .new-word_btn {

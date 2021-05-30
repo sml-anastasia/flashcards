@@ -1,6 +1,14 @@
+.card-box {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .card {
-  width: 15em;
-  height: 20em;
+  width: 12em;
+  height: 16em;
   margin: 2rem;
   padding: 1rem;
   display: flex;

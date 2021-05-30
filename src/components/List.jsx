@@ -24,7 +24,7 @@ function WordItem(props) {
     );
 }
 
-class List extends React.Component{
+export default class List extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
@@ -75,17 +75,3 @@ class List extends React.Component{
         );
     }
 }
-export default List;
-
-
-/* <td>
-                <button className="btn_add">
-                <img src="./images/icon-add.svg" alt=""/>
-                </button>
-                <button className="btn_edit">
-                    <img src="./images/icon-pen.svg" alt=""/>
-                </button>
-                <button className="btn_del">
-                    <img src="./images/icon-delete.svg" alt=""/>
-                </button>
-            </td> */

@@ -1,11 +1,25 @@
-function Bar(props) {
+import { Link } from "react-router-dom";
+import logo from "../assets/images/logo.png";
+
+function Header(props) {
     return(
-        <div className="aside-bar">
-            <span className="aside-bar__link">main page</span>
-            <span className="aside-bar__link">vocabulary</span>
-            <span className="aside-bar__link">train mode</span>
-            <span className="aside-bar__link">tags</span>
-        </div>
+        <header className="header">
+            <nav className="header__nav">
+                <li className="header__nav__link header__nav__logo">
+                    <img src={logo} alt="logo" className="logo" />
+                    <Link className="head-title" to="/main">flashcards</Link>
+                </li>
+                <li className="header__nav__link">
+                    <Link className="header__nav__link" to="/main">main page</Link>
+                </li>
+                <li className="header__nav__link">
+                    <Link className="header__nav__link" to="/cards">cards</Link>
+                </li>
+                <li className="header__nav__link">
+                    <Link className="header__nav__link" to="/game">game</Link>
+                </li>
+            </nav>
+        </header>
     );
 }
-export default Bar;
+export default Header;

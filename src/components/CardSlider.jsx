@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import CardBox from './CardBox';
-// import Card from './Card';
 
 function WordInfo(props) {
     return (
