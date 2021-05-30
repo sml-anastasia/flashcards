@@ -10,7 +10,7 @@ function Header(props) {
                     <Link className="head-title" to="/main">flashcards</Link>
                 </li>
                 <li className="header__nav__link">
-                    <Link className="header__nav__link" to="/main">main page</Link>
+                    <Link className="header__nav__link" to="/main">home</Link>
                 </li>
                 <li className="header__nav__link">
                     <Link className="header__nav__link" to="/cards">cards</Link>
