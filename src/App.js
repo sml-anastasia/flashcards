@@ -1,4 +1,5 @@
 import './App.css';
+import './assets/fonts/fonts';
 import Card from './components/Card';
 import Header from './components/Header';
 import Main from './components/Main';
@@ -16,8 +17,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <Header>
-        </Header>
+        <Header></Header>
         <main>
         <Switch>
             <Route exact path="/main" component={Main} />

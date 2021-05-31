@@ -1,8 +1,10 @@
-function NotFound(props) {
+import notfound from "../assets/images/not-found.svg";
+
+function NotFound() {
     return(
         <div className="not-found">
-            <p>Error 404</p>
-            <p>Sorry, page not found</p>
+            <p className="not-found__message">Sorry, page not found</p>
+            <img src={notfound} alt="404" className="not-found__error" />
         </div>
     )
 }

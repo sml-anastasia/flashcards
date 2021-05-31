@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
-import logo from "../assets/images/logo.png";
+import logo from "../assets/images/logo.svg";
 
 function Header(props) {
     return(
         <header className="header">
             <nav className="header__nav">
                 <li className="header__nav__link header__nav__logo">
-                    <img src={logo} alt="logo" className="logo" />
+                    <Link to="/main"><img src={logo} alt="logo" className="logo" /></Link>
                     <Link className="head-title" to="/main">flashcards</Link>
                 </li>
                 <li className="header__nav__link">

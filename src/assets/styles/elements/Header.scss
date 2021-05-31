@@ -7,7 +7,7 @@
   flex-direction: row;
   justify-content: space-between;
   font-size: 2rem;
-  background-color: $accentColor1;
+  background-color: $supportColorWhite;
   color: $supportColorWhite;
 }
 
@@ -20,6 +20,7 @@
 }
 
 .header__nav__link {
+  font-family: "Tenor Sans";
   list-style: none;
   text-decoration: none;
   color: $supportColorDark;
@@ -32,6 +33,8 @@
 }
 
 .logo {
+  width: 100px;
+  height: auto;
   display: inline-block;
   margin: 0 1rem;
 }
